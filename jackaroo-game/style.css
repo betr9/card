@@ -1,0 +1,154 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0f212b;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #162127;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #2c3e50;
+}
+
+.instructions {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.card {
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgb(255 255 255 / 10%) ;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card-info {
+    /* الحجم الجديد */
+    width: 90%; /* سيأخذ 90% من عرض العنصر الأب */
+    min-height: 200px; /* ارتفاع أكبر */
+    margin: 20px auto; /* توسيط المربع مع تباعد */
+
+    /* التنسيقات الواضحة */
+    background-color: #f0f8ff; /* لون أزرق فاتح */
+    padding: 30px; /* مساحة داخلية أكبر */
+    border-radius: 12px; /* زوايا أكثر استدارة */
+    border-left: 6px solid #1e90ff; /* حد جانبي واضح */
+    
+    /* تحسين النص */
+    font-size: 22px; /* حجم خط أكبر */
+    text-align: right;
+    line-height: 1.8; /* تباعد بين الأسطر */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* ظل لعمق أفضل */
+    
+    /* محاذاة المحتوى */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* للشاشات الصغيرة */
+@media (max-width: 600px) {
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    }
+    
+    .card-info {
+        font-size: 16px;
+    }
+    /* إضافة هذه الأنماط الجديدة للبطاقات المتخصصة */
+.card {
+    position: relative;
+}
+
+.card-type {
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 2px 0;
+    border-radius: 0 0 8px 8px;
+    font-size: 12px;
+}
+
+/* تحسين عرض معلومات البطاقة */
+.card-info p {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.card-info strong {
+    color: #2c3e50;
+    font-size: 20px;
+}
+.card-info h2 {
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+.card-info p {
+    line-height: 1.8;
+    margin: 10px 0;
+}
+/* ... الكود الأصلي الذي لديك ... */
+
+/* أضف هذا الجزء الجديد هنا */
+.card-details h2 {
+    color: #1e90ff;
+    margin-bottom: 15px;
+}
+
+.card-description {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.error {
+    color: #ff4500;
+    font-weight: bold;
+}
+
+/* إذا كان لديك وسائط إعلامية @media تبقى هنا بعدها */
+@media (max-width: 600px) {
+    /* ... */
+}
+.card-info h2 {
+    color: #1e90ff; /* لون أزرق للعنوان */
+    font-size: 28px; /* حجم أكبر للعنوان */
+    margin-bottom: 20px;
+}
+
+.card-info .card-description {
+    font-size: 20px; /* حجم خط الوصف */
+    color: #333; /* لون داكن للوضوح */
+}
+
+}
